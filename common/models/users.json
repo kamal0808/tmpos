@@ -1,0 +1,28 @@
+{
+  "name": "Users",
+  "plural": "Users",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "firstName": {
+      "type": "string",
+      "required": true
+    },
+    "lastName": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "organisation": {
+      "type": "belongsTo",
+      "model": "Organisation",
+      "foreignKey": "organisationId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

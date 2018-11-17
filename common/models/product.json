@@ -1,0 +1,26 @@
+{
+  "name": "Product",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "batchNumber": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "costPrice": {
+      "type": "number"
+    },
+    "sellingPrice": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

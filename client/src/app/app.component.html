@@ -1,0 +1,21 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <input matInput [(ngModel)]="newProduct.batchNumber" placeholder="Batch No." value="" name="batchNumber">
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <input matInput [(ngModel)]="newProduct.description" placeholder="Item Description" value="" name="description">
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <input matInput [(ngModel)]="newProduct.costPrice" placeholder="Cost Price" value="" name="costPrice">
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <input matInput [(ngModel)]="newProduct.sellingPrice" placeholder="Selling Price" value="" name="sellingPrice">
+  </mat-form-field>
+  <button mat-raised-button color="primary" class="example-full-width" (click)="addProduct()">Add</button>
+</form>

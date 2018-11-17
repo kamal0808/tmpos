@@ -1,0 +1,30 @@
+{
+  "name": "Organisation",
+  "plural": "Organisations",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "users": {
+      "type": "hasMany",
+      "model": "Users",
+      "foreignKey": "organisationId"
+    },
+    "products": {
+      "type": "hasMany",
+      "model": "Product",
+      "foreignKey": "organisationId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
