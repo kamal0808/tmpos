@@ -46,7 +46,7 @@
         "params": "$!../.tmp"
       },
       {
-        "params": "$!../client/dist/client"
+        "params": "$!../client"
       },
     ]
   },

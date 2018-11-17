@@ -16,10 +16,10 @@ app.start = function () {
       var explorerPath = app.get('loopback-component-explorer').mountPath;
       console.log('Browse your REST API at %s%s', baseUrl, explorerPath);
     }
-    app.use('/', app.loopback.static(path.resolve(__dirname, '../client/dist/client')));
+    app.use('/', app.loopback.static(path.resolve(__dirname, '../client')));
 
     app.get('/*', function (req, res, next) {
-      res.sendFile('index.html', {root: path.resolve(__dirname, '../client/dist/client')});
+      res.sendFile('index.html', {root: path.resolve(__dirname, '../client')});
     });
   });
 };
