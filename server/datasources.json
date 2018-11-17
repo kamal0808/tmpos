@@ -1,12 +1,12 @@
 {
   "mongo": {
-    "host": "localhost",
-    "port": 27017,
-    "url": "mongodb://localhost:27017/tmpos",
-    "database": "tmpos",
-    "password": "",
+    "host": "ds037987.mlab.com",
+    "port": 37987,
+    "url": "mongodb://heroku_fxj30tlg:vs6criv6fptulo999s14og43oe@ds037987.mlab.com:37987/heroku_fxj30tlg",
+    "database": "heroku_fxj30tlg",
+    "password": "vs6criv6fptulo999s14og43oe",
     "name": "mongo",
-    "user": "",
+    "user": "heroku_fxj30tlg",
     "connector": "mongodb"
   }
 }
